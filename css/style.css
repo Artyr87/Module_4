@@ -9,7 +9,7 @@ html {
  }
 
  .body {
-   margin: 0 auto;
+   margin: 0;
    list-style: none;
    box-sizing: border-box;
  }
@@ -20,10 +20,10 @@ html {
    color: aqua;
  }
  
- .header {
+ /* .header {
    width: 1200px;
    margin: 0 auto;
- }
+ } */
  .header::after {
   content: '';
   display: table;
@@ -84,8 +84,8 @@ margin-right: 0px;
 
 .container {
   margin: 0 auto;
-  width: 1200px;
-  padding-left: 0; 
+  width: 1110px;
+  /* padding-left: 0;  */
 }
 
 .products {
@@ -103,7 +103,7 @@ margin-right: 0px;
 .product-cart {
 
   float: left;
-  margin-right: 60px;
+  margin-right: 10px;
   margin-bottom: 30px;
 }
 
@@ -175,7 +175,7 @@ img {
 .news .one-new {
 float: left;
 margin-right: 55px;
-width: 345px;
+width: 310px;
 
 
 }
