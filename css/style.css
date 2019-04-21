@@ -10,9 +10,16 @@ html {
 
  .body {
    margin: 0;
-   list-style: none;
+   /* list-style: none; */
    box-sizing: border-box;
  }
+
+ .container {
+  margin: 0 auto;
+  width: 1110px;
+  /* padding-left: 0;  */
+}
+
  .right-clearfix {
    float: left;
  }
@@ -47,6 +54,7 @@ html {
 
  }
 
+
  .hr {
    margin-bottom: 90px;
   border: 5px solid aqua;
@@ -66,6 +74,7 @@ html {
   float: left;
   margin-right: 30px;
   
+  
   }
 .menu li:nth-child(6){
 margin-right: 0px;
@@ -80,13 +89,11 @@ margin-right: 0px;
 
    
 }
-
-
-.container {
-  margin: 0 auto;
-  width: 1110px;
-  /* padding-left: 0;  */
+.main {
+  padding: 0px;
 }
+
+
 
 .products {
   list-style: none;
@@ -105,10 +112,18 @@ margin-right: 0px;
   float: left;
   margin-right: 10px;
   margin-bottom: 30px;
+  width: 270px;
 }
 
+.product-cart img {
+  width: 270px
+}
 .product-cart:nth-child(4n) {
   margin-right: 0px;
+}
+
+.product-cart:nth-child(5n) {
+  clear: left
 }
 
 .product-cart a {
@@ -119,9 +134,13 @@ img {
   display: block;
 }
 
-.name, .cash {
+/* .name{
   float: left;
 
+} */
+
+.cash {
+  float: right;
 }
 .name {
   /* line-height: 28px; изменился размер cash */
@@ -164,6 +183,7 @@ img {
 
 .news {
   list-style: none;
+  padding: 0px;
 }
 
 .news::after {
@@ -175,9 +195,13 @@ img {
 .news .one-new {
 float: left;
 margin-right: 55px;
-width: 310px;
+width: 333px;
 
 
+}
+
+.one-new img {
+  max-width: 333px;
 }
 .news .one-new:nth-child(3) {
   margin-right: 0px;
