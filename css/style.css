@@ -10,7 +10,7 @@ html {
 
  .body {
    margin: 0;
-   /* list-style: none; */
+   list-style: none;
    box-sizing: border-box;
  }
 
@@ -27,10 +27,12 @@ html {
    color: aqua;
  }
  
- /* .header {
+ .header {
    width: 1200px;
    margin: 0 auto;
- } */
+
+ } 
+ 
  .header::after {
   content: '';
   display: table;
@@ -39,8 +41,16 @@ html {
 
  
  .menu {
+   width: 600px; 
    float: right;
    list-style: none;
+   font-weight: 500px;
+ }
+
+ .clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
  }
  .header-two {
    
@@ -49,7 +59,7 @@ html {
    /* margin-left: auto;
    margin-right: auto; */
    margin: 0 auto 30px;
-   text-align: center;
+   text-align : center;
 
 
  }
@@ -73,6 +83,7 @@ html {
 .menu li {
   float: left;
   margin-right: 30px;
+  margin-top: 15px;
   
   
   }
@@ -90,7 +101,7 @@ margin-right: 0px;
    
 }
 .main {
-  padding: 0px;
+  /* padding: 0px; */
 }
 
 
@@ -113,6 +124,8 @@ margin-right: 0px;
   margin-right: 10px;
   margin-bottom: 30px;
   width: 270px;
+  text-decoration: none;
+  
 }
 
 .product-cart img {
@@ -134,23 +147,16 @@ img {
   display: block;
 }
 
-/* .name{
-  float: left;
-
-} */
-
 .cash {
   float: right;
 }
 .name {
-  /* line-height: 28px; изменился размер cash */
-  /* padding-top: 10px;
-  padding-bottom: 10px; */
-  width: 200px;
-  /* padding-left: 10px; */
+  /* width: 200px; */
   box-sizing: border-box; 
-  /* background: black; */
   padding:10px 0 10px 10px; 
+  text-decoration: none;
+  font-size: 18px;
+  
 }
 
 .cash {
@@ -161,12 +167,11 @@ img {
   text-align: center;
 }
 .price {
-      /* box-sizing: border-box; */
       font-size: 18px;
       background: black;
       color: rgba(255, 255, 255, 255);
-      /* padding-left: 10px; */
-  
+      text-decoration: none;
+      
 }
 .price::after {
   display: table;
@@ -184,6 +189,7 @@ img {
 .news {
   list-style: none;
   padding: 0px;
+
 }
 
 .news::after {
@@ -210,12 +216,12 @@ width: 333px;
 .hr-news {
   margin-left: 0;
   margin-bottom: 25px;
-  border: 1px solid aqua;
+  border: 1px solid #4ec6ab;
    width: 135px;
   
 }
 .button {
-  background-color: aqua;
+  background-color: #4ec6ab;
   border: none;
   color: white;
   padding: 15px 32px;
